@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Logo from "./Logo";
-import Instructions from "./Instructions";
-import Link from "./Link";
+import Logo from "./components/Logo";
+import Instructions from "./components/Instructions/Instructions";
+import Link from "./components/Link/Link";
 
 function App() {
   return (
