@@ -1,8 +1,7 @@
 import React from "react";
 import "./Button.module.css";
 
-function Button(props) {
-  const { title } = props;
+function Button({ title }) {
   return <button>{title}</button>;
 }
 
