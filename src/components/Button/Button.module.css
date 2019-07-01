@@ -1,0 +1,13 @@
+button {
+  width: 307px;
+  height: 72px;
+  border-radius: 36px;
+  background-color: #325dff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.21;
+  letter-spacing: 4.2px;
+  text-align: center;
+  color: #ffffff;
+}
