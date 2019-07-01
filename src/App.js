@@ -9,7 +9,8 @@ function App() {
         <Logo />
         <Instructions />
         <Link />
-        <Button />
+        <Button title={"Hello"} />
+        <Button> Hi! </Button>
       </header>
     </div>
   );
