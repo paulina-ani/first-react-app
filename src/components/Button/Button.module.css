@@ -1,6 +1,7 @@
 .primary {
-  width: 307px;
-  height: 72px;
+  width: 50%;
+  height: 7%;
+  padding: 10px;
   border-radius: 36px;
   background-color: #1e90ff;
   font-family: Lato;
