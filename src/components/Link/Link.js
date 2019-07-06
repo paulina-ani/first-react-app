@@ -1,4 +1,5 @@
 import React from "react";
+import "./Link.module.css";
 
 function Link() {
   return (
