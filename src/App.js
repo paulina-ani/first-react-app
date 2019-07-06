@@ -11,8 +11,8 @@ function App() {
         <Link />
         <Logo />
         <Instructions />
-        <Button title={"Hello"} />
-        <Button> Hi! </Button>
+        <Button title={"Hello"} variant={"primary"} />
+        <Button variant={"secondary"}> Hi! </Button>
       </header>
     </div>
   );

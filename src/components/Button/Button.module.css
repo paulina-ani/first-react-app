@@ -1,8 +1,8 @@
-button {
+.primary {
   width: 307px;
   height: 72px;
   border-radius: 36px;
-  background-color: #325dff;
+  background-color: #1e90ff;
   font-family: Lato;
   font-size: 14px;
   font-weight: bold;
@@ -11,4 +11,9 @@ button {
   text-align: center;
   color: #ffffff;
   margin-top: 5px;
+}
+
+.secondary {
+  color: black;
+  background-color: lightblue;
 }

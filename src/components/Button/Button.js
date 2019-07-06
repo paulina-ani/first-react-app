@@ -1,9 +1,14 @@
 import React from "react";
-import "./Button.module.css";
+import styles from "./Button.module.css";
 
-function Button({ children, title }) {
+const { primary, secondary } = styles;
+
+function Button({ children, title, variant }) {
   const content = children || title;
-  return <button>{content}</button>;
+  const classNames = [primary, variant === "secondary" ? secondary : ""].join(
+    " "
+  );
+  return <button className={classNames}>{content}</button>;
 }
 
 export default Button;
