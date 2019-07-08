@@ -1,16 +1,16 @@
 import React from "react";
 import { H1, Logo, Instructions, Button } from "../../components";
-import styles from "./LandingPage.module.css";
-
-const { LandingPageClass } = styles;
+import { LandingPage as LandingPageClass } from "./LandingPage.module.css";
 
 function LandingPage({
   heroSectionColor = "#282c34",
   heroSectionTitle = "This is my first react-app"
 }) {
-  const classNames = [LandingPageClass];
   return (
-    <div className={classNames} style={{ backgroundColor: heroSectionColor }}>
+    <div
+      className={LandingPageClass}
+      style={{ backgroundColor: heroSectionColor }}
+    >
       <H1 title={heroSectionTitle} />
       <Logo />
       <Instructions />

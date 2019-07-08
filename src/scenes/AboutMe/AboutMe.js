@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./AboutMe.module.css";
+import { AboutMe as AboutMeClass } from "./AboutMe.module.css";
 import { H1, Subtitle, Link } from "../../components";
 
 function AboutMe({
@@ -7,11 +7,9 @@ function AboutMe({
   AboutMeTitle = "About me",
   AboutMeSubtitle = "Please visit my LinkedIn page"
 }) {
-  const { AboutMeClass } = styles;
-  const classNames = [AboutMeClass];
   return (
     <div
-      className={classNames}
+      className={AboutMeClass}
       style={{ backgroundColor: AboutMeSectionColor }}
     >
       <H1>{AboutMeTitle}</H1>
