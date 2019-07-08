@@ -1,12 +1,17 @@
 import React from "react";
 import "./App.css";
 import LandingPage from "./scenes/LandingPage/LandingPage";
+import AboutMe from "./scenes/AboutMe/AboutMe";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/aboutme" component={AboutMe} />
+      </Switch>
+    </Router>
   );
 }
 
