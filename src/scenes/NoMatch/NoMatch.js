@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./NoMatch.module.css";
+import { container, bigTitle, link } from "./NoMatch.module.css";
 
 function NoMatch(params) {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.bigTitle}>404</h1>
-      <a className={styles.link} href="/">
+    <div className={container}>
+      <h1 className={bigTitle}>404</h1>
+      <a className={link} href="/">
         Go back home
       </a>
     </div>
