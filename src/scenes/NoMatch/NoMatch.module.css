@@ -18,10 +18,16 @@
 }
 
 .link {
-  font-size: 1em;
-  color: white;
+  opacity: 0.7;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .link:hover {
-  color: lightgreen;
+  color: greenyellow;
+  cursor: pointer;
 }
