@@ -7,10 +7,12 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import { NavBar } from "./components";
 
 function App(props) {
   return (
     <Router>
+      <NavBar />
       <Switch>
         <Route exact path="/landing-page" component={LandingPage} />
         <Route exact path="/aboutme" component={AboutMe} />

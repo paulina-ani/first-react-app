@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkedIn as LinkedInClass } from "./Link.module.css";
+import { link as LinkedInClass } from "./Link.module.css";
 
 function Link() {
   return (

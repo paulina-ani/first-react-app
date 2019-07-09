@@ -1,6 +1,9 @@
 import React from "react";
 import { H1, Logo, Instructions, Button } from "../../components";
-import { LandingPage as LandingPageClass } from "./LandingPage.module.css";
+import {
+  LandingPage as LandingPageClass,
+  logo
+} from "./LandingPage.module.css";
 
 function LandingPage({
   heroSectionColor = "#282c34",
@@ -12,7 +15,7 @@ function LandingPage({
       style={{ backgroundColor: heroSectionColor }}
     >
       <H1 title={heroSectionTitle} />
-      <Logo />
+      <Logo className={logo} />
       <Instructions />
       <Button title={"Hello"} variant={"primary"} />
       <Button variant={"secondary"}> Hi! </Button>
