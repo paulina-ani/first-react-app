@@ -41,7 +41,7 @@ div {
 }
 
 .todoapp {
-  background: #fff;
+  background: #282c34;
   margin: 130px 0 40px 0;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
@@ -270,6 +270,9 @@ div {
 }
 
 .todoCount {
+  display: flex;
+  flex-direction: row;
+  justify-content: speace-around;
   float: left;
   text-align: left;
 }
@@ -285,6 +288,7 @@ div {
   position: absolute;
   right: 0;
   left: 0;
+  display: flex;
 }
 
 .filters li {
