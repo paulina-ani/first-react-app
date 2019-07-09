@@ -16,8 +16,11 @@ function NavBar(props) {
         <Link className={link} to="/">
           Home
         </Link>
-        <Link className={link} to="/aboutme" {...props}>
+        <Link className={link} to="/aboutme">
           About me
+        </Link>
+        <Link className={link} to="todoapp">
+          Todo App
         </Link>
       </nav>
     </header>
