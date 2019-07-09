@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Template • TodoMVC</title>
-    <link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
-    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
-    <link rel="stylesheet" href="todo.css" />
-  </head>
-  <body>
+import React from "react";
+import "./TodoApp.module.css";
+
+function TodoAppFooter(props) {
+  return (
+    <footer className="info">
+      <p>Double-click to edit a todo</p>
+      <p>
+        Created by
+        <a href="hhttps://github.com/paulina-ani">Paulina Aniśkiewicz</a>
+      </p>
+      <p>
+        Part of <a href="http://todomvc.com">TodoMVC</a>
+      </p>
+    </footer>
+  );
+}
+
+function TodoApp(props) {
+  return (
     <section className="todoapp">
       <header className="header">
         <h1>todos</h1>
@@ -26,7 +35,7 @@
             <div className="view">
               <input className="toggle" type="checkbox" checked />
               <label>Taste JavaScript</label>
-              <button className="destroy"></button>
+              <button className="destroy" />
             </div>
             <input className="edit" value="Create a TodoMVC template" />
           </li>
@@ -34,17 +43,21 @@
             <div className="view">
               <input className="toggle" type="checkbox" />
               <label>Buy a unicorn</label>
-              <button className="destroy"></button>
+              <button className="destroy" />
             </div>
             <input className="edit" value="Rule the web" />
           </li>
         </ul>
       </section>
       <footer className="footer">
-        <span className="todoCount"><strong>0</strong> item left</span>
+        <span className="todoCount">
+          <strong>0</strong> item left
+        </span>
         <ul className="filters">
           <li>
-            <a className="selected" href="#/">All</a>
+            <a className="selected" href="#/">
+              All
+            </a>
           </li>
           <li>
             <a href="#/active">Active</a>
@@ -56,13 +69,7 @@
         <button className="clearCompleted">Clear completed</button>
       </footer>
     </section>
-    <footer className="info">
-      <p>Double-click to edit a todo</p>
-      <p>
-        Created by
-        <a href="hhttps://github.com/paulina-ani">Paulina Aniśkiewicz</a>
-      </p>
-      <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-    </footer>
-  </body>
-</html>
+  );
+}
+
+export default TodoApp;
