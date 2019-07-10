@@ -32,6 +32,12 @@
 }
 
 .link:hover {
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.activeLink {
   color: greenyellow;
+  font-weight: bold;
   cursor: pointer;
 }

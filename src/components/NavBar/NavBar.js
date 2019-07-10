@@ -1,27 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import {
   header as headerClass,
   logo,
   nav as navClass,
-  link
+  link,
+  activeLink
 } from "./NavBar.module.css";
 
+const activeLinkStyle = {
+  color: "greenyellow",
+  fontWeight: "bold",
+  cursor: "pointer"
+};
 function NavBar(props) {
   return (
     <header className={headerClass}>
       <Logo className={logo} />
       <nav className={navClass}>
-        <Link className={link} to="/">
+        <NavLink
+          className={link}
+          activeClassName={activeLink}
+          to="/landing-page"
+        >
           Home
-        </Link>
-        <Link className={link} to="/aboutme">
+        </NavLink>
+        <NavLink className={link} activeStyle={activeLinkStyle} to="/aboutme">
           About me
-        </Link>
-        <Link className={link} to="todoapp">
+        </NavLink>
+        <NavLink className={link} activeClassName={activeLink} to="/todoapp">
           Todo App
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );
